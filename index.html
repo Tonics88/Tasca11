@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasca 11 - Cerca de fotografies amb AJAX a Flickr</title>
+	<!-- Llibreries de bootstrap afegides directament d'internet-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/metodeCercar.js"></script>
+</head>
+<body style="background-color:silver">
+</head>
+<body style="background-color:lightgrey; text-align:center;">
+    <!-- Aquesta pagina web ens genera una taula de bootstrap amb les dades d'un JSON que tenim guardat -->
+    <br>
+    <div class="container jumbotron">
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-6 col-md-2 my-1">
+                    <label class="mr-sm-2" for="tagSelector">Tipus de cerca :</label>
+                    <select class="custom-select mr-sm-2" id="tagSelector">
+                        <option value="all" selected>Totes</option>
+                        <option value="any" >Qualcuna</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-10 my-1">
+                    <label class="mr-sm-2" for="tags">Etiquetes :</label>
+                    <div class="input-custom mr-sm-2">
+                        <input  type="text" 
+                        class="form-control" 
+                        id="tags" 
+                        placeholder="Introdueix tantes com vulguis separades per espais."
+                        >
+                    </div>
+                </div>
+                <!-- <button type="button">Entrar</button> -->
+            </div>
+        </form>
+        <hr>
+        
+        <div id="images"></div>
+        
+        
+    </div>
+    <!-- <h1>Resultats consulta a Google Maps</h1> -->
+    <!-- <input type="button" id="viewBtn" value="Veure Restaurants" onclick="webConstructor();">
+        <div id="results"></div> -->
+        <!-- Pagina web creada per en Toni Caballero Salas -->
+    </body>
+    </html>
